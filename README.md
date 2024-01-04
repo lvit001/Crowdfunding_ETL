@@ -1,7 +1,7 @@
 # Crowdfunding_ETL
 
 
-#Instructions
+# Instructions
 The instructions for this mini project are divided into the following subsections:
   Create the Category and Subcategory DataFrames
   Create the Campaign DataFrame
@@ -21,7 +21,7 @@ Create the Category and Subcategory DataFrames
 
 4. Export the subcategory DataFrame as subcategory.csv and save it to your GitHub repository.
 
-#Create the Campaign DataFrame
+# Create the Campaign DataFrame
 1. Extract and transform the crowdfunding.xlsx Excel data to create a campaign DataFrame has the following columns:
   The "cf_id" column
 
@@ -53,7 +53,7 @@ Create the Category and Subcategory DataFrames
 
 2. Export the campaign DataFrame as campaign.csv and save it to your GitHub repository.
 
-#Create the Contacts DataFrame
+# Create the Contacts DataFrame
 1. Choose one of the following two options for extracting and transforming the data from the contacts.xlsx Exceldata:
 
   Option 1: Use Python dictionary methods.
@@ -91,7 +91,7 @@ Split each "name" column value into a first and a last name, and place each in a
 
 Clean and then export the DataFrame as contacts.csv and save it to your GitHub repository.
 
-#Create the Crowdfunding Database
+# Create the Crowdfunding Database
 
 1. Inspect the four CSV files, and then sketch an ERD of the tables by using QuickDBD(http://www.quickdatabasediagrams.com).
 2. Use the information from the ERD to create a table schema for each CSV file.
