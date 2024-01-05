@@ -12,8 +12,8 @@ The instructions for this mini-project are divided into the following subsection
   
 # Create the Category and Subcategory DataFrames
 1. Extract and transform the crowdfunding.xlsx Excel data to create a category DataFrame that has the following columns:
-  1. "category_id" column that has entries going sequentially from "cat1" to "catn", where n is the number of unique categories
-  2. "category" column that contains only the category titles
+  - "category_id" column that has entries going sequentially from "cat1" to "catn", where n is the number of unique categories
+  - "category" column that contains only the category titles
 
 2. Export the category DataFrame as [category.csv](https://github.com/lvit001/Crowdfunding_ETL/blob/main/Resources/category.csv) and save it to your GitHub repository.
 
