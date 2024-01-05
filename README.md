@@ -94,11 +94,22 @@ Create the Category and Subcategory DataFrames
 # Create the Crowdfunding Database
 
   1. Inspect the four CSV files, and then sketch an ERD of the tables by using QuickDBD(http://www.quickdatabasediagrams.com).
-  2. Use the information from the ERD to create a table schema for each CSV file.
+  2. ![image](https://github.com/lvit001/Crowdfunding_ETL/assets/140283164/4ee45501-f802-4818-b03c-790e36415994)
+  3. Use the information from the ERD to create a table schema for each CSV file.
       Note: Remember to specify the data types, primary keys, foreign keys, and other constraints.
-  3. Save the database schema as a Postgres file named crowdfunding_db_schema.sql, and save it to your GitHubrepository.
-  4. Create a new Postgres database, named crowdfunding_db.
-  5. Using the database schema, create the tables in the correct order to handle the foreign keys.
-  6. Verify the table creation by running a SELECT statement for each table.
-  7. Import each CSV fi le into its corresponding SQL table.
-  8. Verify that each table has the correct data by running a SELECT statement for each.
+  4. Save the database schema as a Postgres file named crowdfunding_db_schema.sql, and save it to your GitHubrepository.
+  5. Create a new Postgres database, named crowdfunding_db.
+  6. Using the database schema, create the tables in the correct order to handle the foreign keys.
+  7. Verify the table creation by running a SELECT statement for each table.
+  8. ![image](https://github.com/lvit001/Crowdfunding_ETL/assets/140283164/d5c5dd86-eeb7-4c2f-8cf5-69e2a3d7483e)
+  9. Import each CSV file into its corresponding SQL table.
+  10. Verify that each table has the correct data by running a SELECT statement for each.
+  11. ![image](https://github.com/lvit001/Crowdfunding_ETL/assets/140283164/8f614178-2f93-4618-b1a4-6c6e892e7c9a)
+  12. ![image](https://github.com/lvit001/Crowdfunding_ETL/assets/140283164/b97d6892-b2de-42c7-b01d-19a0e379c0d6)
+  13. ![image](https://github.com/lvit001/Crowdfunding_ETL/assets/140283164/c3f64279-c9f6-4b19-a4c7-9d7f274ac017)
+  14. ![image](https://github.com/lvit001/Crowdfunding_ETL/assets/140283164/8901767d-edad-48ef-b8e0-268136e925e8)
+
+
+
+
+
