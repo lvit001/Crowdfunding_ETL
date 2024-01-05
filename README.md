@@ -56,12 +56,13 @@ Create the Category and Subcategory DataFrames
 # Create the Contacts DataFrame
 1. Choose one of the following two options for extracting and transforming the data from the contacts.xlsx Exceldata:
 
-  Option 1: Use Python dictionary methods.
-  Option 2: Use regular expressions.
+  - Option 1: Use Python dictionary methods.
+  - Option 2: Use regular expressions.
 
 2. If you chose Option 1, complete the following steps:
 
   Import the contacts.xlsx file into a DataFrame.
+  _Note: when exporting this file, the initial code that was provided needed to be changed for the export to work correctly. `header=2` was updated to `header=3` as that was when the header row began_
 
   Iterate through the DataFrame, converting each row to a dictionary.
 
@@ -82,6 +83,7 @@ Create the Category and Subcategory DataFrames
   Import the contacts.xlsx file into a DataFrame.
 
   Extract the "contact_id", "name", and "email" columns by using regular expressions.
+  _For the email column, had help with the regex code for extracting emails from [here](https://stackoverflow.com/questions/42407785/regex-extract-email-from-strings)._
 
   Create a new DataFrame with the extracted data.
 
@@ -106,7 +108,7 @@ Create the Category and Subcategory DataFrames
   10. Verify that each table has the correct data by running a SELECT statement for each.
   11. ![image](https://github.com/lvit001/Crowdfunding_ETL/assets/140283164/8f614178-2f93-4618-b1a4-6c6e892e7c9a)
   12. ![image](https://github.com/lvit001/Crowdfunding_ETL/assets/140283164/b97d6892-b2de-42c7-b01d-19a0e379c0d6)
-  13. ![image](https://github.com/lvit001/Crowdfunding_ETL/assets/140283164/c3f64279-c9f6-4b19-a4c7-9d7f274ac017)
+  13. ![image](https://github.com/lvit001/Crowdfunding_ETL/assets/140283164/ac7e6a53-520e-43ac-94b5-ab6878d492e2)
   14. ![image](https://github.com/lvit001/Crowdfunding_ETL/assets/140283164/8901767d-edad-48ef-b8e0-268136e925e8)
 
 
