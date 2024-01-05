@@ -7,19 +7,21 @@ The instructions for this mini project are divided into the following subsection
   Create the Campaign DataFrame
   Create the Contacts DataFrame
   Create the Crowdfunding Database
+
+# [Jupyter Notebook File](https://github.com/lvit001/Crowdfunding_ETL/blob/main/ETL_Mini_Project_LVitaioli_HShoberg.ipynb)
   
-Create the Category and Subcategory DataFrames
+# Create the Category and Subcategory DataFrames
 1. Extract and transform the crowdfunding.xlsx Excel data to create a category DataFrame that has the following columns:
   A "category_id" column that has entries going sequentially from "cat1" to "catn", where n is the number of unique categories
   A "category" column that contains only the category titles
 
-2. Export the category DataFrame as category.csv and save it to your GitHub repository.
+2. Export the category DataFrame as [category.csv](https://github.com/lvit001/Crowdfunding_ETL/blob/main/Resources/category.csv) and save it to your GitHub repository.
 
 3. Extract and transform the crowdfunding.xlsx Excel data to create a subcategory DataFrame that has the following columns:
   A "subcategory_id" column that has entries going sequentially from "subcat1" to "subcatn", where n is the number of unique subcategories
   A "subcategory" column that contains only the subcategory titles
 
-4. Export the subcategory DataFrame as subcategory.csv and save it to your GitHub repository.
+4. Export the subcategory DataFrame as [subcategory.csv](https://github.com/lvit001/Crowdfunding_ETL/blob/main/Resources/subcategory.csv) and save it to your GitHub repository.
 
 # Create the Campaign DataFrame
 1. Extract and transform the crowdfunding.xlsx Excel data to create a campaign DataFrame has the following columns:
@@ -51,7 +53,7 @@ Create the Category and Subcategory DataFrames
   
   The "subcategory_id" column, with the unique identifi cation numbers matching those in the "subcategory_id"column of the subcategory DataFrame
 
-2. Export the campaign DataFrame as campaign.csv and save it to your GitHub repository.
+2. Export the campaign DataFrame as [campaign.csv](https://github.com/lvit001/Crowdfunding_ETL/blob/main/Resources/campaign.csv) and save it to your GitHub repository.
 
 # Create the Contacts DataFrame
 1. Choose one of the following two options for extracting and transforming the data from the contacts.xlsx Exceldata:
@@ -91,17 +93,17 @@ Create the Category and Subcategory DataFrames
 
   Split each "name" column value into a first and a last name, and place each in a new column.
 
-  Clean and then export the DataFrame as contacts.csv and save it to your GitHub repository.
+  Clean and then export the DataFrame as [contacts.csv](https://github.com/lvit001/Crowdfunding_ETL/blob/main/Resources/contacts.csv) and save it to your GitHub repository.
 
 # Create the Crowdfunding Database
 
-  1. Inspect the four CSV files, and then sketch an ERD of the tables by using QuickDBD(http://www.quickdatabasediagrams.com).
+  1. Inspect the four CSV files, and then sketch an [ERD](https://github.com/lvit001/Crowdfunding_ETL/blob/main/Resources/ERD.png) of the tables by using QuickDBD(http://www.quickdatabasediagrams.com).
   2. ![image](https://github.com/lvit001/Crowdfunding_ETL/assets/140283164/4ee45501-f802-4818-b03c-790e36415994)
   3. Use the information from the ERD to create a table schema for each CSV file.
       Note: Remember to specify the data types, primary keys, foreign keys, and other constraints.
   4. Save the database schema as a Postgres file named crowdfunding_db_schema.sql, and save it to your GitHubrepository.
   5. Create a new Postgres database, named crowdfunding_db.
-  6. Using the database schema, create the tables in the correct order to handle the foreign keys.
+  6. Using the [database schema](https://github.com/lvit001/Crowdfunding_ETL/blob/main/Resources/crowdfunding_db_schema.sql), create the tables in the correct order to handle the foreign keys.
   7. Verify the table creation by running a SELECT statement for each table.
   8. ![image](https://github.com/lvit001/Crowdfunding_ETL/assets/140283164/d5c5dd86-eeb7-4c2f-8cf5-69e2a3d7483e)
   9. Import each CSV file into its corresponding SQL table.
