@@ -12,88 +12,58 @@ The instructions for this mini-project are divided into the following subsection
   
 # Create the Category and Subcategory DataFrames
 1. Extract and transform the crowdfunding.xlsx Excel data to create a category DataFrame that has the following columns:
-  A "category_id" column that has entries going sequentially from "cat1" to "catn", where n is the number of unique categories
-  A "category" column that contains only the category titles
+  1. "category_id" column that has entries going sequentially from "cat1" to "catn", where n is the number of unique categories
+  2. "category" column that contains only the category titles
 
 2. Export the category DataFrame as [category.csv](https://github.com/lvit001/Crowdfunding_ETL/blob/main/Resources/category.csv) and save it to your GitHub repository.
 
 3. Extract and transform the crowdfunding.xlsx Excel data to create a subcategory DataFrame that has the following columns:
-  A "subcategory_id" column that has entries going sequentially from "subcat1" to "subcatn", where n is the number of unique subcategories
-  A "subcategory" column that contains only the subcategory titles
+  1. "subcategory_id" column that has entries going sequentially from "subcat1" to "subcatn", where n is the number of unique subcategories
+  2. "subcategory" column that contains only the subcategory titles
 
 4. Export the subcategory DataFrame as [subcategory.csv](https://github.com/lvit001/Crowdfunding_ETL/blob/main/Resources/subcategory.csv) and save it to your GitHub repository.
 
 # Create the Campaign DataFrame
 1. Extract and transform the crowdfunding.xlsx Excel data to create a campaign DataFrame has the following columns:
-  The "cf_id" column
-
-  The "contact_id" column
-  
-  The "company_name" column
-  
-  The "blurb" column, renamed to "description"
-  
-  The "goal" column, converted to the float data type
-  
-  The "pledged" column, converted to the float data type
-  
-  The "outcome" column
-  
-  The "backers_count" column
-  
-  The "country" column
-  
-  The "currency" column
-  
-  The "launched_at" column, renamed to "launch_date" and with the UTC times converted to the datetime format
-  
-  The "deadline" column, renamed to "end_date" and with the UTC times converted to the datetime format
-  
-  The "category_id" column, with unique identifi cation numbers matching those in the "category_id" column ofthe category DataFrame
-  
-  The "subcategory_id" column, with the unique identifi cation numbers matching those in the "subcategory_id"column of the subcategory DataFrame
+  1. The "cf_id" column
+  2. The "contact_id" column
+  3. The "company_name" column
+  4. The "blurb" column, renamed to "description"
+  5. The "goal" column, converted to the float data type
+  6. The "pledged" column, converted to the float data type
+  7. The "outcome" column
+  8. The "backers_count" column
+  9. The "country" column
+  10. The "currency" column
+  11. The "launched_at" column, renamed to "launch_date" and with the UTC times converted to the datetime format
+  12. The "deadline" column, renamed to "end_date" and with the UTC times converted to the datetime format
+  13. The "category_id" column, with unique identifi cation numbers matching those in the "category_id" column ofthe category DataFrame
+  14. The "subcategory_id" column, with the unique identifi cation numbers matching those in the "subcategory_id"column of the subcategory DataFrame
 
 2. Export the campaign DataFrame as [campaign.csv](https://github.com/lvit001/Crowdfunding_ETL/blob/main/Resources/campaign.csv) and save it to your GitHub repository.
 
 # Create the Contacts DataFrame
 1. Choose one of the following two options for extracting and transforming the data from the contacts.xlsx Exceldata:
+  1. Option 1: Use Python dictionary methods.
+  2. Option 2: Use regular expressions.
 
-  - Option 1: Use Python dictionary methods.
-  - Option 2: Use regular expressions.
+3. If you chose `Option 1`, complete the following steps:
+  1. Import the contacts.xlsx file into a DataFrame. _Note: when exporting this file, the initial code that was provided needed to be changed for the export to work correctly. `header=2` was updated to `header=3` as that was when the header row began_
+  2. Iterate through the DataFrame, converting each row to a dictionary.
+  3. Iterate through each dictionary, doing the following:
+  4. Extract the dictionary values from the keys by using a Python list comprehension.
+  5. Add the values for each row to a new list.
+  6. Create a new DataFrame that contains the extracted data.
+  7. Split each "name" column value into a first and last name, and place each in a new column.
+  8. Clean and export the DataFrame as contacts.csv and save it to your GitHub repository.
 
-2. If you chose Option 1, complete the following steps:
-
-  Import the contacts.xlsx file into a DataFrame.
-  _Note: when exporting this file, the initial code that was provided needed to be changed for the export to work correctly. `header=2` was updated to `header=3` as that was when the header row began_
-
-  Iterate through the DataFrame, converting each row to a dictionary.
-
-  Iterate through each dictionary, doing the following:
-
-  Extract the dictionary values from the keys by using a Python list comprehension.
-
-  Add the values for each row to a new list.
-
-  Create a new DataFrame that contains the extracted data.
-
-  Split each "name" column value into a first and last name, and place each in a new column.
-
-  Clean and export the DataFrame as contacts.csv and save it to your GitHub repository.
-
-3. If you chose Option 2, complete the following steps:
-
-  Import the contacts.xlsx file into a DataFrame.
-
-  Extract the "contact_id", "name", and "email" columns by using regular expressions.
-  _For the email column, had help with the regex code for extracting emails from [here](https://stackoverflow.com/questions/42407785/regex-extract-email-from-strings)._
-
-  Create a new DataFrame with the extracted data.
-
-  Convert the "contact_id" column to the integer type.
-
-  Split each "name" column value into a first and a last name, and place each in a new column.
-
-  Clean and then export the DataFrame as [contacts.csv](https://github.com/lvit001/Crowdfunding_ETL/blob/main/Resources/contacts.csv) and save it to your GitHub repository.
+3. If you chose `Option 2`, complete the following steps:
+   1. Import the contacts.xlsx file into a DataFrame.
+   2. Extract the "contact_id", "name", and "email" columns by using regular expressions. _For the email column, had help with the regex code for extracting emails from [here](https://stackoverflow.com/questions/42407785/regex-extract-email-from-strings)._
+   3. Create a new DataFrame with the extracted data.
+   4. Convert the "contact_id" column to the integer type.
+   5. Split each "name" column value into a first and a last name, and place each in a new column.
+   6. Clean and then export the DataFrame as [contacts.csv](https://github.com/lvit001/Crowdfunding_ETL/blob/main/Resources/contacts.csv) and save it to your GitHub repository.
 
 # Create the Crowdfunding Database
 
